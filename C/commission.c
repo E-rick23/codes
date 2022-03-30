@@ -21,6 +21,6 @@ int main() {
     //Adding the commission to the salary.
    everything = salary+commission;
     //Printing the final salary.
-   printf("TOTAL = R$ %.2lf", everything);
+   printf("TOTAL = R$ %.2lf\n", everything);
     return 0;
 }
