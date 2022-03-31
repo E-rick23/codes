@@ -1,3 +1,8 @@
 # codes
 
-This is simply a place where i keep some of the codes i made using some varied languages, most of them are quite simple, but it should cover up the basics.
+Hello, in this repository i'll keep most of my simpler codes while i'm learning a few languages. 
+For now, it will have folders for C, JavaScript and Python, keep in mind that those are mostly initial codes and might not be the most optimized way to do things, but, it can be helpful to learn or to get a better undestanding of coding.
+
+I'll try my best to keep comments on codes explaining what each part of the code do, so it can be better read.
+
+Also, i'll keep updating, and adding codes to this repository as i keep making them.
