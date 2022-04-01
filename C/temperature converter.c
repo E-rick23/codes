@@ -6,7 +6,8 @@ int main()
 
     float temperature, f, k;
     char base, convert;
-    
+    printf("Welcome, this temperature converter uses the following format: 25.0 C > F");
+    printf("Please input the temperature you want converted: ");
     scanf("%f %c > %c", &temperature, &base, &convert);
         if (base == 'C' || base == 'c'){
             if (convert == 'F' || convert == 'f'){
