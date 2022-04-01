@@ -1,3 +1,4 @@
+//This is a temperature converter, still quite rough, i will update it soon...
 #include <stdio.h>
 
 int main()
