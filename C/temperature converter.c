@@ -7,9 +7,19 @@ int main()
     float temperature, f, k;
     char base, convert;
     printf("Welcome, this temperature converter uses the following format: 25.0 C > F");
+    /*First the program tells the user the format they should use.
+      The format is: (Temperature base_scale > converted scale)
+      Examples: 25 C > F
+                150 F > K
+                322 K > C 
+      Basically any operation using Celsius(C) Fahrenheint(F) and Kelvin(K).*/    
+    printf("It supports Celsius(C), Fahrenheint(F) and Kelvin(K)");
     printf("Please input the temperature you want converted: ");
     scanf("%f %c > %c", &temperature, &base, &convert);
+    //Here, the program will choose the operation that needs to be done by looking at the base scale (C, F or K);
         if (base == 'C' || base == 'c'){
+            //After the base scale, the program will look for the second scale to make the conversion.
+            //This applies to all other operations.
             if (convert == 'F' || convert == 'f'){
                 f = temperature*1.8+32;
                 printf("%.2f F", f);
