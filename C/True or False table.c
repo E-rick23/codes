@@ -1,11 +1,15 @@
+//Simple code that tells the true or false results of the operations, such as "and"(&), "or"(|) and "xor"(^).
 #include <stdio.h>
 
 int main() 
 {
-    char a, simbolo, b;
-    scanf("%c %c %c", &a, &simbolo, &b);
+    char a, symbol, b;
+	printf("Welcome, this program allows you to see the truth tables for the operators &, | and ^.\n");
+	printf("This program uses the following format: x symbol y. \n").
+	printf("Please input the table you want to know about: ");
+    scanf("%c %c %c", &a, &symbol, &b);
 
-    if (simbolo == '&'){
+    if (symbol == '&'){
     		printf("-------\n");
     		printf("|%c||%c||r|\n", a, b);
     		printf("+-+-+-+\n");
@@ -17,7 +21,7 @@ int main()
     		printf("+-+-+-+\n");
     		printf("|1|1|1|\n");
     };
-    if (simbolo == '|'){
+    if (symbol == '|'){
     		printf("-------\n ");
     		printf("|%c||%c||r|\n", a, b);
     		printf("+-+-+-+\n");
@@ -30,7 +34,7 @@ int main()
     		printf("|1|1|1|\n");
 
     };
-    if (simbolo == '^'){
+    if (symbol == '^'){
     	    printf("-------\n");
     		printf("|%c||%c||r|\n", a, b);
     		printf("+-+-+-+\n");
