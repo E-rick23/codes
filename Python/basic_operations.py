@@ -1,4 +1,4 @@
-#1 - This code makes the basic operations between two numbers.
+#1 - This code calculates the basic operations between two numbers.
 a = float(input('Type the first number: '));
 b = float(input('Type the second number: '));
 

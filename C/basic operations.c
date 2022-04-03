@@ -1,4 +1,4 @@
-//This code calculates the basic operations of two numbers.
+//This code calculates the basic operations between two numbers.
 #include <stdio.h>
 
 int main()
