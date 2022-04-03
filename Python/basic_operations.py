@@ -18,13 +18,13 @@ subtraction = a - b;
 division = a / b;
 multiplication = a * b;
 
-#5 - Does the same as #3.
+#5 - Does the same as #3 but with different variables.
 multint = int(multiplication);
 
 if multint == multiplication:
   multiplication = multint;
 
-#6 - Does the same as #3 and #5.  
+#6 - Does the same as #3 and #5 but with different variables.  
 divisionint = int(division);
 
 if divisionint == division:
