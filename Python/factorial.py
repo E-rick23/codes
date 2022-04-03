@@ -1,4 +1,5 @@
 #This code asks for a number, then, tells it's factorial.
+#Importing math library
 import math
 
 def text_prompt(msg):
