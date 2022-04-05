@@ -9,9 +9,9 @@ int main(){
         number = number/10;
     }
     first = number;
-    printf("O ultimo número é: %d\n", last);
-    printf("O primeiro número é: %d\n", first);
+    printf("The last digit is: %d\n", last);
+    printf("The first digit is: %d\n", first);
     number = first+last;
-    printf("A soma é: %d\n", number);
+    printf("The sum of the first and last digits is: %d\n", number);
     return 0;
 }
