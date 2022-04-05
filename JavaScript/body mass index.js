@@ -11,8 +11,17 @@ if (bmi >= 17 && bmi <= 18.4){
     alert(`Your BMI is: ${bmi}.\nIt is considered as: Underweight (Mild thinness).`);
 };
 if (bmi >= 18.5 && bmi <= 24.9){
-    alert(`Your BMI is: ${bmi}.\nIt is considered as: Normal`);
+    alert(`Your BMI is: ${bmi}.\nIt is considered as: Normal.`);
 };
 if (bmi >= 25.0 && bmi <= 29.9){
-    alert(`Your BMI is: ${bmi}.\nIt is considered as: Overweight`);
+    alert(`Your BMI is: ${bmi}.\nIt is considered as: Overweight.`);
+};
+if (bmi >= 30.0 && bmi <= 34.9){
+    alert(`Your BMI is: ${bmi}.\nIt is considered as: Obese(Class 1).`);
+};
+if (bmi >= 35.0 && bmi <= 39.9){
+    alert(`Your BMI is: ${bmi}.\nIt is considered as: Obese(Class 2).`);
+};
+if (bmi >= 40.0){
+    alert(`Your BMI is: ${bmi}.\nIt is considered as: Obese(Class 3).`);
 };
