@@ -1,5 +1,6 @@
-var weight = prompt("Enter your weight");
-var height = prompt("Enter your height");
+
+var height = prompt("Enter your height (in meters)");
+var weight = prompt("Enter your weight (in kg)");
 var bmi = weight/(height*height);
 if (bmi < 16){
     alert(`Your BMI is: ${bmi}.\nIt is considered as: Underweight (Severe Thinness).`);
