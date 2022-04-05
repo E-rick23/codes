@@ -5,6 +5,8 @@ var height = prompt("Enter your height (in meters)");
 var weight = prompt("Enter your weight (in kg)");
 //After that, it calculates the BMI with the following formula.
 var bmi = weight/(height*height);
+//Next, it makes the result use precision point 2. (x.xx).
+var bmi = bmi.toFixed(2);
 //Next, depending on the final value of this formula, it will tell the user one of the following results.
 if (bmi < 16){
     alert(`Your BMI is: ${bmi}.\nIt is considered as: Underweight (Severe Thinness).`);
