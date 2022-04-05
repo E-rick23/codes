@@ -24,6 +24,13 @@ int main(){
     else 
     {
         printf("%d isn't a palindrome.", copyx);
+        if ((copyx%2) == 0){
+            printf("and is an even number.");
+        }
+        else
+        {
+            printf("and is an odd number.");
+        };
     };
     return 0;
 };
