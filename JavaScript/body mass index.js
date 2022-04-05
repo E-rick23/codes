@@ -1,7 +1,11 @@
+//This program calculates your BMI based on the World Health Organization BMI basic categories.
 
+//First, it asks the height and weight of the user.
 var height = prompt("Enter your height (in meters)");
 var weight = prompt("Enter your weight (in kg)");
+//After that, it calculates the BMI with the following formula.
 var bmi = weight/(height*height);
+//Next, depending on the final value of this formula, it will tell the user one of the following results.
 if (bmi < 16){
     alert(`Your BMI is: ${bmi}.\nIt is considered as: Underweight (Severe Thinness).`);
 };
