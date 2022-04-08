@@ -1,8 +1,11 @@
+//This code tells if a number is a palindrome or not, and, after that if it's even or odd.
 #include <stdio.h>
 
 int main(){
+    //Declaring variables...
     int x, reverse, restm, copyx;
-    x = reverse = restm = 0;  
+    x = reverse = restm = 0;
+    printf("Type a number to find out if it's a palindrome, and if it's even or odd: ");  
     scanf("%d", &x);    
     copyx = x;
     while(x!=0)    
