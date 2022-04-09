@@ -24,8 +24,7 @@ int main(){
     arithmetic = sum/10;
     geometric = pow(mult,(float) 1/10);
     harmonic = 10/division;
-
-
+    //After everything is calculated, the code prints the results.
     printf("The arithmetic average is: %.2f\n", arithmetic);
     printf("The harmonic average is: %.2f\n", harmonic);
     printf("The geometric average is: %.2f\n", geometric);
