@@ -4,14 +4,14 @@
 
 int main(){
     //Declaring variables (there are a lot of them here...).
-    float eh, eg, em, num, sum, mult, division, counter, arithmetic, harmonic, geometric;
+    float num, sum, mult, division, counter, arithmetic, harmonic, geometric;
     /*Setting the multiplication variable to one,
       because if it multiplies by zero, the result will always be zero,
       therefore, we'll have problems. */   
     mult = 1;
     //Setting all other variables to zero.
-    eh = eg = em = num = sum = division = counter = arithmetic = harmonic = geometric = 0;
-    printf("Please enter 10 values");
+    num = sum = division = counter = arithmetic = harmonic = geometric = 0;
+    printf("Please enter 10 values: ");
     //This while loop requests 10 values, and adds them to the variables sum, mult and division.
     while (counter < 10){
         scanf("%f", &num);
@@ -24,14 +24,10 @@ int main(){
     arithmetic = sum/10;
     geometric = pow(mult,(float) 1/10);
     harmonic = 10/division;
-    eh = (harmonic - arithmetic)/arithmetic;
-    eg = (geometric - arithmetic)/arithmetic;
-    em = (eh + eg)/2;
-    em = em*100;
+
 
     printf("The arithmetic average is: %.2f\n", arithmetic);
     printf("The harmonic average is: %.2f\n", harmonic);
     printf("The geometric average is: %.2f\n", geometric);
-    printf("Erro médio é %.2f %%", em);
     return 0;
 }
