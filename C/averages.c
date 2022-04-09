@@ -1,10 +1,15 @@
+//This code gives the arithmetic, geometric, and harmonic averages.
 #include <stdio.h>
 #include <math.h>
 
 int main(){
-
+    //Declaring variables (there are a lot of them here...).
     float eh, eg, em, num, sum, mult, division, counter, arithmetic, harmonic, geometric;
+    /*Setting the multiplication variable to one,
+      because if it multiplies by zero, the result will always be zero,
+      therefore, we'll have problems. */   
     mult = 1;
+    //Setting all other variables to zero.
     eh = eg = em = num = sum = division = counter = arithmetic = harmonic = geometric = 0;
     while (counter < 10){
         scanf("%f", &num);
