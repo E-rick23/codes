@@ -23,6 +23,7 @@ int main(){
     */
     if (copyx == reverse){
         printf("%d is a palindrome ", copyx);
+        //If statement to check if the number is odd or even*
         if ((copyx%2) == 0){
             printf("and an even number.");
         }
@@ -34,6 +35,7 @@ int main(){
     else 
     {
         printf("%d isn't a palindrome.", copyx);
+        //*Same thing.
         if ((copyx%2) == 0){
             printf("and is an even number.");
         }
