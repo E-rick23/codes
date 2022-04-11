@@ -22,8 +22,7 @@ int evenOrOdd(int n1, int tf){
 int main(){
     //Declaring variables...
     int x, reverse, restm, copyx, p;
-    p = 0;
-    x = reverse = restm = 0;
+    x = reverse = restm = p = 0;
     printf("Type a number to find out if it's a palindrome, and if it's even or odd: ");  
     scanf("%d", &x);    
     //After getting the input, the copyx variable gets the same value as the input (x).
