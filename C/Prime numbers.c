@@ -8,13 +8,13 @@ int primo(int n){
     {
         if(n%i==0)
         {    
-            printf("The number isn't a prime number");
+            printf("The number %d isn't a prime number", n);
             notprime=1;
             break;
         }
     }
     if(notprime==0)
-    printf("The number is a prime number");
+    printf("The number %d is a prime number", n);
     return 0;
 }
 int main(){    
