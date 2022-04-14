@@ -16,7 +16,7 @@ int main()
         while (counter2 <= n)
         {
             rows = 1;
-            while (rows <= counter2)
+            while (rows <= counter2);
             {
                 printf(" %2d", counter1);
                 counter1++;
