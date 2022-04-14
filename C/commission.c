@@ -1,8 +1,6 @@
-
-#include <stdio.h>
-
 /*This code calculates the total salary of an employee,
   considering a commission of 15% on their sellings. */
+#include <stdio.h>
 int main() {
    //Declaring variables
    char name;
