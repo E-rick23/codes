@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include <math.h>
 
-
+//This function tells if the values entered are prime or not.
 int primo(int n){
     int m, notprime;
     m = notprime = 0;
@@ -23,7 +23,8 @@ int primo(int n){
     return 0;
 }
 
-int ProDivSum(int n)
+//This function makes the operations to tell if both values are amicable or not.
+int amicableOrNot(int n)
 {
     int sum = 1;
     for (int i=2; i<=sqrt(n); i++)
@@ -37,11 +38,12 @@ int ProDivSum(int n)
     }
     return sum;
 }
+//This function returns true, if the values are amicable, and false, if they're not.
 bool isAmicable(int a,int b)
 {
-    return(ProDivSum(a) == b && ProDivSum(b) == a);
+    return(amicableOrNot(a) == b && amicableOrNot(b) == a);
 }
-
+//Main function that gets the values and prints the results.
 int main(){    
       
     int x, y, pr, pr2;
