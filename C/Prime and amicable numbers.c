@@ -1,7 +1,10 @@
+//This code checks if two numbers are prime, and, if they're an amicable pair. 
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
 #include <math.h>
+
+
 int primo(int n){
     int m, notprime;
     m = notprime = 0;
@@ -10,13 +13,13 @@ int primo(int n){
     {
         if(n%i==0)
         {    
-            printf("The number %d isn't a prime number ", n);
+            printf("The number %d isn't a prime number \n", n);
             notprime=1;
             break;
         }
     }
     if(notprime==0)
-    printf("The number %d is a prime number ", n);
+    printf("The number %d is a prime number \n", n);
     return 0;
 }
 
@@ -34,7 +37,7 @@ int ProDivSum(int n)
     }
     return sum;
 }
-bool chkAmicable(int a,int b)
+bool isAmicable(int a,int b)
 {
     return(ProDivSum(a) == b && ProDivSum(b) == a);
 }
@@ -42,11 +45,11 @@ bool chkAmicable(int a,int b)
 int main(){    
       
     int x, y, pr, pr2;
-    printf("Enter the number to check if it's a prime: ");
+    printf("Enter two numbers to check if they're prime and an amicable pair: ");
     scanf("%d %d",&x, &y);
     pr = primo(x);
     pr2 = primo(y);
-    if( chkAmicable(x,y))
+    if( isAmicable(x,y))
         printf("The numbers <%d,%d> are an amicable pair.\n", x, y);
     else
         printf("The numbers <%d,%d> aren't an amicable pair.\n", x, y);
