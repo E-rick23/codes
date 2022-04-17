@@ -52,8 +52,8 @@ int main(){
     pr = primo(x);
     pr2 = primo(y);
     if( isAmicable(x,y))
-        printf("The numbers <%d,%d> are an amicable pair.\n", x, y);
+        printf("The numbers %d and %d are an amicable pair.\n", x, y);
     else
-        printf("The numbers <%d,%d> aren't an amicable pair.\n", x, y);
+        printf("The numbers %d and %d aren't an amicable pair.\n", x, y);
     return 0;
 }    
