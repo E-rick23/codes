@@ -45,6 +45,7 @@ int main(){
     //This do-while statment makes sure the program keeps going until the value entered is -1.
     do{
         printf("Welcome, this program converts a decimal value into a value in the base between 2 to 7! \n");
+        printf("To stop the program, enter -1. \n");
         printf("Enter the number that will be converted: ");
         scanf("%d", &value);
         printf("Enter the base you want to convert the number to: ");
