@@ -1,13 +1,14 @@
+//This program displays the number the user entered in the numerical base the user entered.
 #include <stdio.h>
 
 
 int operation(int num, int div)
 {
     if (num == -1){
-        printf("Programa Encerrado!");
+        printf("Program ended!");
     }
     if (num == 0){
-        printf("Numero 0(10) na base %d = 0(%d)\n", div, div);
+        printf("The number 0 is 0 and doesn't need convertion.");
     }
     if (num != -1 && num != 0) {
         int vet_bin[50];
@@ -23,7 +24,7 @@ int operation(int num, int div)
 		    num = num / div;
 	    }
 
-	    printf("Numero %d(10) na base %d = ", aux_num, div);
+	    printf("Number %d(10) converted to base %d = ", aux_num, div);
 
 	    for(j = i - 1; j >= 0; j--)
 		    printf("%d", vet_bin[j]);
@@ -40,7 +41,10 @@ int main(){
 
     int value,base,result;
     do{
+
+        printf("Enter the number that will be converted: ");
         scanf("%d", &value);
+        printf("Enter the base you want to convert the number to: ");
         scanf("%d", &base);
         operation(value, base);
     } while (value != -1);
