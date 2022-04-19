@@ -41,7 +41,7 @@ int main(){
 
     int value,base,result;
     do{
-
+        printf("Welcome, this program converts a decimal value into a value in the base between 2 to 7! \n");
         printf("Enter the number that will be converted: ");
         scanf("%d", &value);
         printf("Enter the base you want to convert the number to: ");
