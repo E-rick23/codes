@@ -37,8 +37,6 @@ int operation(int num, int div)
     }
 
 }
-
-	
 int main(){
 
     int value,base,result;
