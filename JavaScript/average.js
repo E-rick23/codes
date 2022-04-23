@@ -1,7 +1,7 @@
 //This code calculates the average of the amount of numbers the user needs.
 
 //Declaring variables...
-var values, counter, x, total, average;
+var values, counter, x, total, aaverage, gaverage, haverage, mult, division;
 //Setting variables default value...
 counter = total = average = x = 0;
 //First, the program asks for input, and converts the input to a int number.
@@ -15,6 +15,6 @@ while (counter < values){
     counter = counter+1;
 };
 //In the end, the average variable divides the sum of the values entered by the amount of values.
-average = total/values;
+aaverage = total/values;
 //After that, it notifies the user the average of the values.
-alert("The average is:" + average);
+alert("The average is:" + aaverage);
