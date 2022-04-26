@@ -2,18 +2,18 @@
   If a certain amount of hours aren't enough to make a day, it will also show them.*/7
 
 //Declaring variables...
-var hours, hour, days, daysandhours;
+var hours, days, daysandhours;
 
-hours = prompt();
-hour = parseFloat(hours);
+hours = parseFloat(prompt());
+
 //Considering 24 hours make a day, the variable days makes a division that assures every 24 hours becomes 1 day.
-days = parseInt(hour/24); 
+days = parseInt(hours/24); 
 //The variable daysandhours gets what's left of the division.
-daysandhours = parseInt(hour%24);
+daysandhours = parseInt(hours%24);
 /*If daysandhours in fact has a value, then, the program will show the user the days, and hours (which are the rest of the division).
   Or else, if the division rest is 0, it will just return the number of days.*/
 if (daysandhours > 0){
-    alert(`${hours} hours in days are: ${days} days ${daysandhours} hours!`);
+    alert(`${parseInt(hours)} hours in days are: ${days} days ${daysandhours} hours!`);
 } else {
-    alert(`${hours} hours in days are: ${days}!`);
+    alert(`${parseInt(hours)} hours in days are: ${days}!`);
 }
