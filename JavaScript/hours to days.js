@@ -4,8 +4,7 @@
 //Declaring variables...
 var hours, days, daysandhours;
 
-hours = parseFloat(prompt());
-
+hours = parseFloat(prompt("Enter the amount of hours to be turned to days: "));
 //Considering 24 hours make a day, the variable days makes a division that assures every 24 hours becomes 1 day.
 days = parseInt(hours/24); 
 //The variable daysandhours gets what's left of the division.
