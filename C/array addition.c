@@ -2,10 +2,13 @@
 
 int main(){
     int size;
+    //First scanf gets the array size.
     scanf("%d", &size);
+    //If the size is greater than 10, it will say the array is too big.
     if (size > 10){
-        printf("Muitos elementos");
+        printf("Too many elements!");
     }
+    //If it's less or equal to ten, it will adquire the elements, and print the array of the sum of the values.
     if (size <= 10){
         int a[size], b[size], sum[size];
         for (int i = 0; i<size; i++){
