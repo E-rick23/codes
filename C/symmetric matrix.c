@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+//This code tells if a matrix is symmetric or not.
 int main(){
     //Declaring variables.
     int t1, t2;
