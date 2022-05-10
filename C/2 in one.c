@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//This code concatenates two arrays into one.
 int main(){
     int t1, t2, t3, c = 0;
     scanf("%d %d", &t1, &t2);
