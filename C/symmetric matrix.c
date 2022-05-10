@@ -17,8 +17,8 @@ int main(){
         {
             m2[i][j] = m[j][i];
         }
-
-    /*for(int i = 0; i < t1; i++)
+    /* For loops that printed the matrixes for testing:
+    for(int i = 0; i < t1; i++)
         for(int j = 0; j < t2; j++)
         {
             printf("%d", m[i][j]);
@@ -30,15 +30,17 @@ int main(){
             printf("%d", m2[i][j]);
         }
     */
+    //For loops that test if the matrices are symmetric
     for(int i = 0; i < t1; i++)
         for(int j = 0; j < t2; j++)
         {
             if(m[i][j] != m2[i][j])
                 lever = false;
         }
+    //If-else statement that prints if the matrix is symmetric or not.
     if(lever == true)
-        printf("Matriz Simétrica");
+        printf("Symmetric Matrix!");
     else if(lever == false)
-        printf("Matriz não Simétrica");
+        printf("The matrix isn't symmetric...");
     return 0;
 }
