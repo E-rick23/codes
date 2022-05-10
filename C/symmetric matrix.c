@@ -2,12 +2,15 @@
 #include <stdbool.h>
 
 int main(){
+    //Declaring variables.
     int t1, t2;
     bool lever = true;
+    //Adquiring the matrix size...
     printf("Enter the number of rows: ");
     scanf("%d", &t1);
     printf("Enter the number of columns: "); 
     scanf("%d", &t2);
+    //Adquiring the matrix values...
     printf("Enter the values of the matrix: \n");
     int m[t1][t2];
     for(int i = 0; i < t1; i++)
@@ -15,6 +18,7 @@ int main(){
         {
             scanf("%d", &m[i][j]);
         }
+    //Creating a transposed matrix for testing...
     int m2[t2][t2];
     for(int i = 0; i < t1; i++)
         for(int j = 0; j < t2; j++)
@@ -34,7 +38,8 @@ int main(){
             printf("%d", m2[i][j]);
         }
     */
-    //For loops that test if the matrices are symmetric
+    /*For loops that compare the original matrix with the
+      transposed one to test if the matrices are symmetric */
     for(int i = 0; i < t1; i++)
         for(int j = 0; j < t2; j++)
         {
