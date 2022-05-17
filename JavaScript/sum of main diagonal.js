@@ -1,4 +1,4 @@
-
+//This code simply makes the sum the main diagonal of a matrix.
 var tam, soma;
 soma = 0;
 tam = parseInt(prompt("Digite o tamanho da matriz:"));
