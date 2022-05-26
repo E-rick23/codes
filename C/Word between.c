@@ -12,7 +12,7 @@ void getemail() {
         if (ep > sp) {                                      
             memcpy (result, sp + 1, ep - sp);               
             result[ep - sp] = 0;                            
-            fputs(result, stdout);                        
+            printf ("%s\n", result);                         
         }
         if(strcmp (arr, "FIM\n") == 0)
             break;
