@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main (void) {
+void getemail() {
     char arr[80];
     while (1){
         fgets(arr, 80, stdin); 
@@ -12,9 +12,13 @@ int main (void) {
         if (ep > sp) {                                      
             memcpy (result, sp + 1, ep - sp);               
             result[ep - sp] = 0;                            
-            printf ("%s\n", result);                        
+            fputs(result, stdout);                        
         }
-        if(strcmp (arr, "stop\n") == 0)
+        if(strcmp (arr, "FIM\n") == 0)
             break;
     }    
+}
+
+int main(){
+    getemail();
 }
