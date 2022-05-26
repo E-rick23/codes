@@ -11,6 +11,6 @@ void main(){
     scanf("%d", &a);
     //Printing the results
     printf("The variable value is: %d", a);
-    printf("The pointer value is: %p", *p);
+    printf("The pointer value is: %d", *p);
     printf("The memory address of the variable is: %p", p);
 }
