@@ -10,7 +10,7 @@ void main(){
     //Scanning value of the a variable
     scanf("%d", &a);
     //Printing the results
-    printf("The variable value is: %d", a);
-    printf("The pointer value is: %d", *p);
-    printf("The memory address of the variable is: %p", p);
+    printf("The variable value is: %d\n", a);
+    printf("The pointer value is: %d\n", *p);
+    printf("The memory address of the variable is: %p\n", p);
 }
