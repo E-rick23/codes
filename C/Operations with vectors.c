@@ -6,12 +6,15 @@
 int main(){
     int a[3], b[3], c[3], d[3];
     for(int i = 0; i<3; i++){
+        printf("Enter the [%d]º element of the first array:", i+1);
         scanf("%d", &b[i]);
     }
     for(int i = 0; i<3; i++){
+        printf("Enter the [%d]º element of the second array:", i+1);
         scanf("%d", &c[i]);
     }
     for(int i = 0; i<3; i++){
+        printf("Enter the [%d]º element of the third array:", i+1);
         scanf("%d", &d[i]);
     }
     a[0] = b[0]+c[0]-(5*d[0]);
