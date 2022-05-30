@@ -20,7 +20,7 @@ int main(){
     a[0] = b[0]+c[0]-(5*d[0]);
     a[1] = b[1]+c[1]-(5*d[1]);
     a[2] = b[2]+c[2]-(5*d[2]);
-
+    printf("The resulting array is:\n");
     printf("A = [%d,%d,%d]", a[0], a[1], a[2]);
     return 0;
 }
