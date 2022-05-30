@@ -15,11 +15,13 @@ void factorial(int* x) {
     *x = result;
 }
 void main(){
-    int n;
+    int n, b;
     //Entering the number.
-    scanf("%d",&n); 
+    printf("Enter the number to get it's factorial: ");
+    scanf("%d",&n);
+    b = n;  //Saving n initial value;
     //Calling the function.
     factorial(&n);
     //Printing the results.
-    printf("%d", n);
+    printf("The factorial of %d is: %d", b, n);
 }
