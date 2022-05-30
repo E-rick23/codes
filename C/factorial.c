@@ -1,4 +1,5 @@
 #include <stdio.h>
+//This code calculates the factorial of a number entered by the user
 void factorial(int* x) {
     //Declaring variables.
     int aux, result = 1;
