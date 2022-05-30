@@ -5,7 +5,7 @@ void main(){
     int a;
     //Declaring pointer
     int *p;
-    //Giving the variable adress to the pointer
+    //Giving the variable address to the pointer
     p = &a;
     //Scanning value of the a variable
     scanf("%d", &a);
