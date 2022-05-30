@@ -1,8 +1,7 @@
 #include <stdio.h>
 void factorial(int* x) {
-    //Declarando variáveis
+    //Declaring variables.
     int aux, result = 1;
-    
     if (*x > 1) {
         //The aux value is x-1 to calculate the factorial
         aux = *x - 1;
@@ -15,6 +14,7 @@ void factorial(int* x) {
     *x = result;
 }
 void main(){
+    //Declaring variables
     int n, b;
     //Entering the number.
     printf("Enter the number to get it's factorial: ");
