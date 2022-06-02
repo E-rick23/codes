@@ -5,11 +5,13 @@ void main()
     //Declaring variables
     int array[100], *max, tam;
     //Receiving array size
+    printf("Type how many numbers you want to enter: ");
     scanf("%d", &tam);
     //Receiving values
-    for (int i = 0 ; i < tam ; i++ )
+    for (int i = 0 ; i < tam ; i++ ){
+        printf("Type the %dº value: ", i+1);
         scanf("%d", &array[i]);
-    
+    }
      max = array;
     *max = *array;
     //Loop that aquires the biggest value
@@ -18,5 +20,5 @@ void main()
             *max = *(array+i);
     }
     //Printing the result.
-    printf("O maior valor é %d.\n", *max);
+    printf("The biggest value is %d.\n", *max);
 }
