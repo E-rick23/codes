@@ -1,5 +1,5 @@
 #include <stdio.h>
-//This code basically spins a matrix 90º degrees
+//This code spins a matrix 90º degrees
 int main(){
     int ma[3][3];
     for (int i = 0; i < 3; i++)
