@@ -16,7 +16,7 @@ void main(){
     n1 = f[1].denominador;
     n2 = f[2].denominador;
 
-    // maximum number between n1 and n2 is stored in max
+    // max is the maximum number between n1 and n2;
     max = (n1 > n2) ? n1 : n2;
 
     while (1) {
