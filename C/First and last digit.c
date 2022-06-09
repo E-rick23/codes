@@ -17,6 +17,7 @@ int main(){
     //Printing the results...
     printf("The last digit is: %d\n", last);
     printf("The first digit is: %d\n", first);
+    //The number variable now adquires the sum of the first and last digits.
     number = first+last;
     printf("The sum of the first and last digits is: %d\n", number);
     return 0;
