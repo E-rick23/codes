@@ -1,12 +1,15 @@
 #include <stdio.h>
 #include <string.h>
+//This code finds a word in a string.
 
+//Declaring functions...
 int countOccurrences(char * str, char * toSearch);
 
 int tolower(int argument);
 
 int main()
 {
+    //Declaring variables...
     char str[40];
     char toSearch[40];
     int count;
@@ -16,7 +19,7 @@ int main()
     printf("Enter word to search occurrences: ");
     scanf("%[^\n]%*c", toSearch);
     
-    
+    //Calling the countOccurrences function...
     count = countOccurrences(str, toSearch);
 
     return 0;
@@ -25,10 +28,12 @@ int main()
 int countOccurrences(char * str, char * toSearch)
 {
     int i, j, found, count, stringLen, searchLen, v[100];
-
+    
+    //Adquiring the lenght of the string, and the word.
     stringLen = strlen(str);     
     searchLen = strlen(toSearch); 
     
+    //Lowering case in both word and string to make sure it finds the word, not being case sensitive.
     for(int i=0; i<stringLen; i++){
        str[i] = tolower(str[i]);
     }
@@ -36,7 +41,7 @@ int countOccurrences(char * str, char * toSearch)
        toSearch[i] = tolower(toSearch[i]);
     }
     count = 0;
-
+    //Searching for the word in the string...
     for(i=0; i <= stringLen-searchLen; i++)
     {
         
@@ -56,6 +61,7 @@ int countOccurrences(char * str, char * toSearch)
             count++;
         }
     }
+    //Printing the results...
     printf("The word appeared: %d times! \n", count);
     if(count != 0){
         printf("The positions they're on are: ");
