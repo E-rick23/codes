@@ -7,7 +7,7 @@ int countOccurrences(char * str, char * toSearch);
 
 int tolower(int argument);
 
-int main()
+void main()
 {
     //Declaring variables...
     char str[40];
@@ -21,8 +21,6 @@ int main()
     
     //Calling the countOccurrences function...
     count = countOccurrences(str, toSearch);
-
-    return 0;
 }
 
 int countOccurrences(char * str, char * toSearch)
@@ -69,6 +67,5 @@ int countOccurrences(char * str, char * toSearch)
         printf("%d ", v[i]);
         }
     }
-    
     return count;
 }
