@@ -14,20 +14,5 @@ int main(){
         }
         printf("\n");
     }
-    /*
-    Used for test, will delete later.
-    printf("%d ", ma[2][0]);
-    printf("%d ", ma[1][0]);
-    printf("%d ", ma[0][0]);
-    printf("\n");
-    printf("%d ", ma[2][1]);
-    printf("%d ", ma[1][1]);
-    printf("%d ", ma[0][1]);
-    printf("\n");
-    printf("%d ", ma[2][2]);
-    printf("%d ", ma[1][2]);
-    printf("%d ", ma[0][2]);
-    printf("\n");
-    */
     return 0;
 }
