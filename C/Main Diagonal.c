@@ -18,11 +18,15 @@ void main(){
 		    printf("Enter the %dº value of the %dº line: ", j+1, i+1);
 			scanf("%d", &m[i][j]);
 		}
-	//After that, the code will sum the main diagonal of the matrix.
+	//After that, the code will print the main diagonal of the matrix.
+	printf("The main diagonal values are: ");
 	for(int i = 0; i < tam; i++)
 		for(int j = 0; j < tam; j++){
-			if (i == j)
+			if (i == j){
+				printf("%d ", m[i][j]);
 				soma = soma + m[i][j];
+			}
+				
 		}
 	//Next, for the final step, the program will print the results.
 	printf("The sum of the principal diagonal is: %d", soma);
