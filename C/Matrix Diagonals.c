@@ -36,6 +36,7 @@ void main(){
 				principal = principal + m[i][j];
 			}
 		};
+	//Next, the program will print the secondary diagonal of the matrix and place it's sum on the "secondary" variable.
 	printf("\nThe values in the secondary diagonal are: ");
 	for(int i = 0; i < size; i++)
 		for(int j = 0; j < size; j++){
@@ -45,7 +46,7 @@ void main(){
 			}
 				
 		}
-	//Next, for the final step, the program will print the results.
+	//Then, for the final step, the program will print the results.
 	printf("\nThe sum of the principal diagonal is: %d", principal);
 	printf("\nThe sum of the secondary diagonal is: %d", secondary);
 }
