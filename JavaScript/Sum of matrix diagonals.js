@@ -1,4 +1,4 @@
-//This code simply makes the sum the main diagonal of a matrix.
+//This code simply makes the sum the principal and secondary diagonals of a matrix.
 //First we declare the variables we need.
 var tam, principal, secondary;
 principal = secondary = 0;
@@ -12,7 +12,7 @@ for(i = 0; i < tam; i++){
         m[i][j] = parseInt(prompt(""));
     };
 };
-//Now, those two for loops sums the values of the main diagonal.
+//Now, those two for loops sums the values of the principal diagonal.
 for(i = 0; i < tam; i++){
     for(j = 0; j < tam; j++){
         if (i == j){
@@ -20,7 +20,7 @@ for(i = 0; i < tam; i++){
         }
     };
 };
-
+//Next, these for loops sums the values of the secondary diagonal.
 for(i = 0; i < tam; i++){
     for(j = 0; j < tam; j++){
 		if ((i + j) == (tam - 1)){
