@@ -1,6 +1,6 @@
 #include <stdio.h>
 //This code simply makes the sum the main diagonal of a matrix.
-int main(){
+void main(){
 	int tam, soma;
 	scanf("%d", &tam);
 	int m[tam][tam];
