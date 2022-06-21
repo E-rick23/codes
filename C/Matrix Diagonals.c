@@ -5,7 +5,7 @@ void main(){
 	int size, principal, secondary;
 	principal = size = secondary = 0;
 	//Scanning the size of the matrix.
-	printf("Hello, this program receives the size of a matrix, it's values, and prints the sum of it's main diagonal.\n\n");
+	printf("Hello, this program receives the size of a matrix, it's values, and prints the sum of it's principal and secondary diagonals.\n\n");
 	printf("On the following step, you'll determine the matrix size.\n\n");
 	printf("Ex: If the size is '3', the matrix will be a 3x3 matrix.\n\n");
 	printf("Enter the size of the matrix: ");
