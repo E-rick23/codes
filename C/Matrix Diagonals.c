@@ -43,9 +43,8 @@ void main(){
 			if ((i + j) == (size - 1)){
 				printf("%d ", m[i][j]);
 				secondary = secondary + m[i][j];
-			}
-				
-		}
+			}	
+		};
 	//Then, for the final step, the program will print the results.
 	printf("\nThe sum of the principal diagonal is: %d", principal);
 	printf("\nThe sum of the secondary diagonal is: %d", secondary);
