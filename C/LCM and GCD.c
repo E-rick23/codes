@@ -14,13 +14,13 @@ int gcd(int x, int y)
 void main()
 {
    //Declaring variables.
-   int n1, n2, maxdc, lcm;
+   int n1, n2, maxcd;
    printf("Enter two integers: ");
    //Adquiring the values.
    scanf("%d %d", &n1, &n2);
    //The first call of the gcd function is made.
-   maxdc = gcd(n1, n2);
+   maxcd = gcd(n1, n2);
    //After the recursion is over, the results are printed.
-   printf("GCD = %d", maxdc);
-   printf("\nLCM = %d", (n1 * n2) / maxdc);
+   printf("GCD = %d", maxcd);
+   printf("\nLCM = %d", (n1 * n2) / maxcd);
 }
