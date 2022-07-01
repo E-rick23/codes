@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-int main(){
+//This code adquires elements for two arrays, then prints an array with the sum of both arrays elements
+void main(){
     int size;
     //First scanf gets the array size.
     scanf("%d", &size);
@@ -25,6 +25,4 @@ int main(){
         }
         
     }
-    
-    return 0;
 }
