@@ -1,17 +1,10 @@
 #This code asks for a number, then, tells it's factorial.
 #Importing math library
 import math
-
-def text_prompt(msg):
-  try:
-    return raw_input(msg)
-  except NameError:
-    return input(msg)
-  
 number = 0
 #While loop that makes sure the input is a positive number.
 while number <= 0:
-  number = float(text_prompt('Enter a number to know its factorial: '));
+  number = float(input('Enter a number to know its factorial: '));
   if number <= 0:
     print('The number must be greater than 0!');
 res = number
