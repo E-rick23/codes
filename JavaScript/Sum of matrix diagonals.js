@@ -1,4 +1,4 @@
-//This code simply makes the sum the principal and secondary diagonals of a matrix.
+//This code makes the sum the principal and secondary diagonals of a matrix.
 //First we declare the variables we need.
 var tam, principal, secondary;
 principal = secondary = 0;
