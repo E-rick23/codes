@@ -1,4 +1,4 @@
-//This code simply concatenates one array into another one, and prints the resulting array
+//This code concatenates one array into another one, and prints the resulting array
 //First the arrays are declared...
 var firstA = [];
 var secondA = [];
