@@ -1,4 +1,4 @@
-/*This simple code converts the user input in hours to days.
+/*This code converts the user input in hours to days.
   If a certain amount of hours aren't enough to make a day, it will also show them.*/7
 
 //Declaring variables...

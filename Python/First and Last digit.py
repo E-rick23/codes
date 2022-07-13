@@ -1,4 +1,4 @@
-#This code simply asks for a number, and shows the first and last digit of that number. :)
+#This code asks for a number, and shows the first and last digit of that number. :)
 
 #First we start off by asking the user a input.
 n = int(input("Enter a number: "));
