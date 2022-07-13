@@ -15,6 +15,6 @@ n2 = int(input(""));
 #The first call of the gcd function is made.
 maxcd = gcd(n1, n2);
 lcm = (n1*n2)/maxcd;
-##After the recursion is over, the results are printed.
+#After the recursion is over, the results are printed.
 print("GCD = " + str(maxcd));
 print("LCM = " + str(lcm));
