@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <time.h>
-
+//This code starts counting as soon as it's initiated, and when the user types "0" it shows the time it spent running.
 int main () {
     time_t seconds;
     
