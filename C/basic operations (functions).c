@@ -32,22 +32,27 @@ void main(){
     printf("1 = Addition, 2 = Subtraction, 3 = Multiplication, 4 = Division.\n");
     printf("Choose the operation: ");
     int operation;
-    scanf("%d", &operation);
-    switch (operation){
-        case (1):
-            addition();
-        break;
-        case (2):
-            subtraction();
-        break;
-        case (3):
-            multiplication();
-        break;
-        case (4):
-            division();
-        break;
-        default:
-            printf("Invalid Operation!");
+    while (operation != 0){
+        scanf("%d", &operation);
+        switch (operation){
+            case (1):
+                addition();
+                printf("\nEnter 0 to exit: ");
+            break;
+            case (2):
+                subtraction();
+                printf("\nEnter 0 to exit: ");
+            break;
+            case (3):
+                multiplication();
+                printf("\nEnter 0 to exit: ");
+            break;
+            case (4):
+                division();
+                printf("\nEnter 0 to exit: ");
+            break;
+            default:
+                printf("Invalid Operation! \n Please choose one of the available options: ");
+        }
     }
-
 }
