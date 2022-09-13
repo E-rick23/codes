@@ -3,7 +3,7 @@
 void main(){
     int vetor[100];
     int whichnum;
-    int foundit = false;
+    bool foundit = false;
     for(int i = 0; i < 100; i++){
         vetor[i] = i;
     }
