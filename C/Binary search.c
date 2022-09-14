@@ -32,7 +32,9 @@ void main()
     printf("Type the number you want to search: ");
     //Waiting for input.
     scanf("%d", &whichnum);
+    //Calling the binarySearch function.
     int result = binarySearch(vetor, 0, fullsize - 1, whichnum);
+    //If the funtion returns -1, that means the value wasn't found, and if it was found, it will return the index of the value.
     if (result == -1)
         printf("\nThe value you entered isn't on this array...");
     else
