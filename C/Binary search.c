@@ -1,9 +1,9 @@
 #include <stdio.h>
-int n = 0; 
+int n = 0; //Variable that counts the number of times the binary search function had to search for the value.
 // Binary search function that returns the index of the number entered or -1 in case it isn't on the array.
 int binarySearch(int array[], int l, int r, int x)
 {
-    n = n+1;
+    n = n+1; //Everytime the function starts, it adds one to the "n" variable, which is the number of times the function was called.
     if (r >= l) {
         int middle = l + (r - l) / 2;
         //If the value is on the middle, the function returns the result.
