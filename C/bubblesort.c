@@ -1,3 +1,4 @@
+//A BubbleSort algorithm, it receives an array and organizes it in ascending order.
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
