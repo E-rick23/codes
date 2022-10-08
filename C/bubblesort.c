@@ -12,9 +12,9 @@ void arrayprinter(int vector[], int size){
 }
 //Function that swaps two values.
 void swapper(int *xpointer, int *ypointer){
-    int aux = *xpointer;
-    *xpointer = *ypointer;
-    *ypointer = aux;
+    int aux = *xpointer; //Variable that saves the first value
+    *xpointer = *ypointer; //Setting the first value as the second one.
+    *ypointer = aux; //Setting the second value as the first one, previously set on the aux variable.
 }
 //BubbleSort funtion.
 void bubblesort(int vector[], int size){
@@ -44,7 +44,7 @@ void main(){
     }
     printf("Generated array: \n");
     arrayprinter(vetor, fullsize); //Printing the generated array.
-    bubblesort(vetor, fullsize);
+    bubblesort(vetor, fullsize); //Sorting the array.
     printf("\n Organized array: \n");
-    arrayprinter(vetor, fullsize);
+    arrayprinter(vetor, fullsize); //Printing the sorted array.
 }
