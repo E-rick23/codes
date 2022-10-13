@@ -25,7 +25,7 @@ void selectionSort(int vector[], int size){
             if(vector[j] < vector[minelement])
             minelement = j;
         }
-        //Swapping the minimumelement with the first one.
+        //Swapping the minimum element with the first one.
         if(minelement != i)
             swapper(&vector[minelement], &vector[i]);
     }
