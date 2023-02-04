@@ -6,5 +6,5 @@
 #Remember to use the "cd" command to get on the folder the script is to run it.
 $1 &>/dev/null
 
-TAMANHO={ du -sh $1 | cut -f1
-echo $TAMANHO
+SIZE={ du -sh $1 | cut -f1
+echo $SIZE
