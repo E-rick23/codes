@@ -13,8 +13,8 @@
             "cStandard": "c99",
             "cppStandard": "c++17",
             "intelliSenseMode": "${default}",
-            //"compilerPath": "/usr/bin/g++" //Use this for Linux
-            "compilerPath": "C:\\MinGW\\bin\\gcc.exe" //Use this for Windows
+            "compilerPath": "/usr/bin/g++" //Use this for Linux
+            //"compilerPath": "C:\\MinGW\\bin\\gcc.exe" //Use this for Windows
         }
     ],
     "version": 4
