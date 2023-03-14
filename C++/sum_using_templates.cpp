@@ -17,7 +17,9 @@ T maior(T v1, T v2) {
 
 int main(){
 
-    cout << maior(7, 3) << endl;
+    auto x = maior(7,3); //Auto identifies the variable type automatically! :O
+
+    cout << x << endl;
     cout << maior(3.4, 7.7) << endl;
 
     return 0;
