@@ -4,9 +4,11 @@
 using namespace std;
 
 int main(){
+    //Generating an object "elevador1".
     Elevador elevador1 = Elevador(10, 4);
     
-    int i = 1;
+    int i = 1; //Variable for the while loop below.
+    //While loop that works until i is different than 1.
     while (i == 1)
     {
         cout << "1 - (Subir andar) | 2 - (Descer andar) | 3 - (Entrar) | 4 - (Sair) | 5 - (Encerrar)" << endl;
@@ -27,6 +29,7 @@ int main(){
         if(x == 5){
             i = 0;
         }
+        //Printing the status of "elevator1" until the loop ends.
         cout << "Capacidade: " << elevador1.getCapacidade() << endl;
         cout << "Pessoas Presentes: " << elevador1.getPessoasPresentes() << endl;
         cout << "Andar Atual: " << elevador1.getAndarAtual() << endl;
