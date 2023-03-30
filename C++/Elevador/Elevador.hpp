@@ -1,14 +1,14 @@
 #include <iostream>
 
 using namespace std;
-
+//Declaring a private class, Elevador.
 class Elevador {
     private:
         int andar_atual;
         int total_andares;
         int capacidade;
         int pessoas_presentes;
-
+    //Declaring some public functions to work with the class.
     public:
         Elevador(int total_andares, int capacidade) {
             this->andar_atual = 0;
