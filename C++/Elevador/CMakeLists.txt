@@ -12,3 +12,5 @@ add_executable( elevator
                 Elevator_main.cpp
                 Elevador.hpp )
 #Honestly, building using g++ seems a lot simpler, but the teacher asked me to use Cmake so here you have it...
+
+#05/04/2023 update, after using Windows to program, I now understand why to use Cmake... Thanks teach.
