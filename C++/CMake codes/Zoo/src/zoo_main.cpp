@@ -1,5 +1,5 @@
 #include <iostream>
-#include "zoo.hpp"
+#include "zoo.h"
 
 using namespace std;
 
