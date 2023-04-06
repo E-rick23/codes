@@ -58,10 +58,10 @@ int main() {
             cout << "2 - " << livro2.titulo << endl;
             cin >> livro;
             if(livro == 1){
-                cout << "Média de todas as notas de avaliação de: " << livro1.titulo << " " << media_notas(livro1.notas_avaliacao) << endl;
+                cout << "Média de todas as notas de avaliação de " << livro1.titulo << ": " << media_notas(livro1.notas_avaliacao) << endl;
             }
             if(livro == 2){
-                cout << "Média de todas as notas de avaliação de: " << livro2.titulo << " " << media_notas(livro2.notas_avaliacao) << endl;
+                cout << "Média de todas as notas de avaliação de " << livro2.titulo << ": " << media_notas(livro2.notas_avaliacao) << endl;
             }
             cout << endl;
         }
