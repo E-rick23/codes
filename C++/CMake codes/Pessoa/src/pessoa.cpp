@@ -7,7 +7,7 @@ int main() {
 
     p1.setNome("Rick Astley");
     p1.setIdade(57);
-    p1.setAltura(1.7);
+    p1.setAltura(1.78);
 
     p1.imprimirDados();
 
