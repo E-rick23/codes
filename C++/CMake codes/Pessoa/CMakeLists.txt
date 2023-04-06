@@ -9,4 +9,4 @@ include_directories( include )
 #After that, to execute it, type -> ./livros
 
 add_executable( pessoa
-                src/pessoa.cpp )
+                src/main.cpp )

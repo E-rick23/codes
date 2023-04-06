@@ -9,4 +9,4 @@ include_directories( include )
 #After that, to execute it, type -> ./funcionario
 
 add_executable( funcionario
-                src/Funcionario_main.cpp )
+                src/main.cpp )
