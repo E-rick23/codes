@@ -31,4 +31,15 @@ class Pessoa {
         cout << "Idade: " << idade << " anos" << endl;
         cout << "Altura: " << altura << "m" << endl;
     }
+
+    bool operator>(Pessoa &p) {
+        return idade > p.getIdade();
+    }
+
+    friend ostream& operator<<(ostream& os, const Pessoa& p) {
+        os << "Nome: " << p.nome << endl;
+        os << "Idade: " << p.idade << " anos" << endl;
+        os << "Altura: " << p.altura <<  "m" << endl;
+    return os;
+}
 };
