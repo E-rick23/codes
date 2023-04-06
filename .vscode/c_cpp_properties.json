@@ -3,7 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/C++/CMake codes/Pessoa/include"
             ],
             "defines": [
                 "_DEBUG",
@@ -13,8 +14,7 @@
             "cStandard": "c99",
             "cppStandard": "c++17",
             "intelliSenseMode": "${default}",
-            //"compilerPath": "/usr/bin/g++" //Use this for Linux
-            "compilerPath": "C:\\MinGW\\bin\\gcc.exe" //Use this for Windows
+            "compilerPath": "C:\\MinGW\\bin\\gcc.exe"
         }
     ],
     "version": 4
