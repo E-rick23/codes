@@ -10,6 +10,7 @@ public class Distancia_no_plano {
         y2 = entrada.nextDouble();
         conta = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
         System.out.println(String.format("%.4f", conta));
+        entrada.close();
 
         /*
          * same thing but using a while loop.
@@ -23,6 +24,7 @@ public class Distancia_no_plano {
          * conta = Math.sqrt(Math.pow((arrayOfDoubles[1] - arrayOfDoubles[0]), 2)
          * + Math.pow((arrayOfDoubles[2] - arrayOfDoubles[3]), 2));
          * System.out.println(String.format("%.4f", conta));
+         * entrada.close();
          */
     }
 }
