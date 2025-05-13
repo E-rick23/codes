@@ -3,106 +3,91 @@
 #include <omp.h>
 #include <time.h>
 
-#define N 1000  // Total de inserções
-
+// Estrutura de um nó da lista
 typedef struct Node {
     int value;
     struct Node* next;
 } Node;
 
-typedef struct {
-    Node* head;
-} LinkedList;
-
-// Função para inserir na cabeça da lista
-void insert(LinkedList* list, int value) {
-    Node* new_node = malloc(sizeof(Node));
+// Função para inserir no início da lista
+void insert(Node** head, int value) {
+    Node* new_node = (Node*) malloc(sizeof(Node));
     new_node->value = value;
-    new_node->next = list->head;
-    list->head = new_node;
+    new_node->next = *head;
+    *head = new_node;
 }
 
-// Função para imprimir uma lista
-void print_list(const char* name, LinkedList* list) {
+// Função para imprimir a lista
+void print_list(Node* head, const char* name) {
     printf("%s: ", name);
-    Node* current = list->head;
+    Node* current = head;
     while (current) {
-        printf("%d ", current->value);
+        printf("%d -> ", current->value);
         current = current->next;
     }
-    printf("\n");
+    printf("NULL\n");
 }
 
 int main() {
-    int num_lists;
+    int N = 100;       // Número de inserções
+    int num_lists;     // Número de listas definido pelo usuário
 
     printf("Digite o número de listas: ");
     scanf("%d", &num_lists);
 
-    if (num_lists <= 0) {
-        fprintf(stderr, "Número de listas deve ser maior que zero.\n");
-        return 1;
-    }
+    // Alocar vetor de listas
+    Node** lists = (Node**) calloc(num_lists, sizeof(Node*));
 
-    // Aloca listas e locks
-    LinkedList* lists = calloc(num_lists, sizeof(LinkedList));
-    omp_lock_t* locks = malloc(num_lists * sizeof(omp_lock_t));
-
+    // Inicializar locks
+    omp_lock_t* locks = (omp_lock_t*) malloc(num_lists * sizeof(omp_lock_t)); //Faz com que cada lista tenha seu lock exclusivo.
+    //Preparando locks para uso das threads
     for (int i = 0; i < num_lists; i++) {
         omp_init_lock(&locks[i]);
     }
 
-    unsigned int global_seed = (unsigned int)time(NULL);
-    unsigned int* seeds;
-
-    // Uma semente por thread
-    int max_threads = omp_get_max_threads();
-    seeds = malloc(max_threads * sizeof(unsigned int));
-    for (int i = 0; i < max_threads; i++) {
-        seeds[i] = global_seed ^ (i * 7919); // 7919 = primo grande para melhor dispersão
-    }
+    // Sementes para números aleatórios por thread
+    unsigned int seeds[64];  // Assumindo no máximo 64 threads
 
     #pragma omp parallel
     {
         int tid = omp_get_thread_num();
+        seeds[tid] = time(NULL) + tid;
 
         #pragma omp single
         {
+            // neste ponto, apenas uma thread entra e cria as tarefas
             for (int i = 0; i < N; i++) {
-                #pragma omp task firstprivate(i, tid)
+                // aqui a tarefa é criada (não executada ainda)
+                #pragma omp task firstprivate(i)
                 {
-                    int value = rand_r(&seeds[tid]) % 1000;
-                    int list_choice = rand_r(&seeds[tid]) % num_lists;
+                    // aqui, esta parte é executada por qualquer thread disponível
+                    int thread_id = omp_get_thread_num(); // Thread que executa a tarefa
+                    int value = rand_r(&seeds[thread_id]) % 1000;
+                    int list_index = rand_r(&seeds[thread_id]) % num_lists; //Quando uma thread insere um valor na lista, ela escolhe qual usar.
 
-                    omp_set_lock(&locks[list_choice]);
-                    insert(&lists[list_choice], value);
-                    omp_unset_lock(&locks[list_choice]);
+                    // Proteção com lock específico da lista
+                    omp_set_lock(&locks[list_index]); // Aguarda até o lock estar livre
+                    insert(&lists[list_index], value); // Executa a operação crítica (inserção)
+                    omp_unset_lock(&locks[list_index]); // Libera o lock para outra thread
                 }
             }
         }
     }
 
-    // Imprime listas
+    // Impressão das listas
     for (int i = 0; i < num_lists; i++) {
         char name[32];
-        snprintf(name, sizeof(name), "Lista %d", (i+1));
-        print_list(name, &lists[i]);
+        sprintf(name, "Lista %d", i + 1);
+        print_list(lists[i], name);
     }
 
-    // Liberação de memória e locks
+    // Liberação dos locks e memória
     for (int i = 0; i < num_lists; i++) {
         omp_destroy_lock(&locks[i]);
-        Node* current = lists[i].head;
-        while (current) {
-            Node* tmp = current;
-            current = current->next;
-            free(tmp);
-        }
     }
 
-    free(lists);
     free(locks);
-    free(seeds);
+    free(lists);
 
     return 0;
 }
